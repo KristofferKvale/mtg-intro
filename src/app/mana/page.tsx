@@ -3,11 +3,6 @@ import Header from '../components/Header'
 import LeftMenu from '../components/LeftMenu'
 import MainContent from '../components/MainContent'
 import Text from '../components/Text'
-import W from '../../../public/mtg-assets/colored/White.jpg'
-import U from '../../../public/mtg-assets/colored/Blue.jpg'
-import B from '../../../public/mtg-assets/colored/Black.jpg'
-import R from '../../../public/mtg-assets/colored/Red.jpg'
-import G from '../../../public/mtg-assets/colored/Green.jpg'
 import Disclaimer from '../components/Disclaimer'
 
 export default function Mana() {
@@ -31,7 +26,8 @@ export default function Mana() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
             <div className='col-span-1'>
               <Entry
-                iconImage={W}
+                iconImageSrc='/mtg-assets/colored/White.jpg'
+                iconImageAlt='Hvit mana symbol'
                 header='Hvit mana'
                 list={
                   <ul>
@@ -55,7 +51,8 @@ export default function Mana() {
             </div>
             <div className='col-span-1'>
               <Entry
-                iconImage={U}
+                iconImageSrc='/mtg-assets/colored/Blue.jpg'
+                iconImageAlt='Blått mana symbol'
                 header='Blå mana'
                 list={
                   <ul>
@@ -79,7 +76,8 @@ export default function Mana() {
             </div>
             <div className='col-span-1'>
               <Entry
-                iconImage={B}
+                iconImageSrc='/mtg-assets/colored/Black.jpg'
+                iconImageAlt='Svart mana symbol'
                 header='Svart mana'
                 list={
                   <ul>
@@ -104,7 +102,8 @@ export default function Mana() {
             </div>
             <div className='col-span-1'>
               <Entry
-                iconImage={R}
+                iconImageSrc='/mtg-assets/colored/Red.jpg'
+                iconImageAlt='Rødt mana symbol'
                 header='Rød mana'
                 list={
                   <ul>
@@ -128,7 +127,8 @@ export default function Mana() {
             </div>
             <div className='col-span-1'>
               <Entry
-                iconImage={G}
+                iconImageSrc='/mtg-assets/colored/Green.jpg'
+                iconImageAlt='Grønt mana symbol'
                 header='Grønn mana'
                 list={
                   <ul>

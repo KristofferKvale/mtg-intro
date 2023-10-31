@@ -1,11 +1,12 @@
-import { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 type IconProps = {
-  image: StaticImageData
+  imageSrc: string
+  alt: string
   size?: 'small' | 'medium' | 'large'
 }
 
-export default function Icon({ image, size = 'medium' }: IconProps) {
+export default function Icon({ imageSrc, alt, size = 'medium' }: IconProps) {
   let sizeClasses: string
   if (size === 'small') {
     sizeClasses = 'w-8 h-8'
@@ -14,5 +15,5 @@ export default function Icon({ image, size = 'medium' }: IconProps) {
   } else {
     sizeClasses = 'w-12 h-12'
   }
-  return <img className={sizeClasses} src={image.src} />
+  return <Image alt={alt} className={sizeClasses} src={imageSrc} />
 }

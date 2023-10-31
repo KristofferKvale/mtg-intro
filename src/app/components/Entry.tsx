@@ -6,17 +6,19 @@ import { getTextColor } from '../utils/colors'
 import { copyright } from '../data/officialTexts'
 
 type EntryProps = {
-  iconImage?: StaticImageData
+  iconImageSrc?: string
+  iconImageAlt?: string
   header: string
   list: JSX.Element
   children: JSX.Element
   headerLevel?: 1 | 2 | 3 | 4
-  whiteBackground: boolean
+  whiteBackground?: boolean
   imageIsCopyrighted?: boolean
 }
 
 export default function Entry({
-  iconImage,
+  iconImageSrc,
+  iconImageAlt,
   header,
   list,
   children,
@@ -32,9 +34,9 @@ export default function Entry({
       }
     >
       <div className='col-span-1'>
-        {iconImage ? (
+        {iconImageSrc && iconImageAlt ? (
           <>
-            <Icon image={iconImage} />
+            <Icon alt={iconImageAlt} imageSrc={iconImageSrc} />
             {imageIsCopyrighted ? (
               <p className='text-xs'>{copyright}</p>
             ) : (
