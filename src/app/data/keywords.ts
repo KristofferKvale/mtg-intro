@@ -32,11 +32,6 @@ const KEYWORD_ITEMS: Keyword[] = [
       'Skapninger med dette nøkkelordet gir skade både som First Strike og ved vanlig skade. Gitt at den ikke dør ved First Strike skade gjør den altså dobbel skade.',
   },
   {
-    name: 'Equipment',
-    description:
-      'Utstyr (Equipment) er en undertype av gjenstander (Artifacts) som tilsier at den kan festes på en skapning (Creature). Se også attach',
-  },
-  {
     name: 'First Strike',
     description:
       'First Strike er et nøkkelord som sier at skapningen (Creature) gir skade først. Det vil si at om bare én av angriper eller blokker har First Strike, og kan gjøre nok skade på den andre til at den dør, så tar ikke skapningen (Creature) med First Strike skade.',
