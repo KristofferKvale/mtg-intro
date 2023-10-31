@@ -8,6 +8,7 @@ type IconProps = {
 
 export default function Icon({ imageSrc, alt, size = 'medium' }: IconProps) {
   let sizeClasses: string
+  let len = size === 'small' ? 8 : size === 'medium' ? 12 : 16
   if (size === 'small') {
     sizeClasses = 'w-8 h-8'
   } else if (size === 'large') {
@@ -15,5 +16,13 @@ export default function Icon({ imageSrc, alt, size = 'medium' }: IconProps) {
   } else {
     sizeClasses = 'w-12 h-12'
   }
-  return <Image alt={alt} className={sizeClasses} src={imageSrc} />
+  return (
+    <Image
+      alt={alt}
+      height={len}
+      width={len}
+      className={sizeClasses}
+      src={imageSrc}
+    />
+  )
 }

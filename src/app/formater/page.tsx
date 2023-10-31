@@ -3,12 +3,19 @@ import Header from '../components/Header'
 import LeftMenu from '../components/LeftMenu'
 import MainContent from '../components/MainContent'
 import Text from '../components/Text'
-import image from '../../../public/tree.png'
+import Image from 'next/image'
 import Disclaimer from '../components/Disclaimer'
 
 export default function Formater() {
   return (
     <>
+      <Image
+        src='/generated/swamp.png'
+        alt='Table of people with armor playing cards in a tavern'
+        width={1000}
+        height={1000}
+        className='z-0 fixed top-0 left-0 w-full aspect-square'
+      />
       <LeftMenu current='formater' />
       <MainContent>
         <>

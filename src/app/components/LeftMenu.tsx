@@ -6,7 +6,7 @@ type LeftMenuProps = {
 
 export default function LeftMenu({ current }: LeftMenuProps) {
   return (
-    <div className='h-fit col-span-1 flex flex-col justify-content-flex-start p-4 bg-stone-800 rounded-lg border-solid border-2 border-blue-800'>
+    <div className='z-10 h-fit col-span-1 flex flex-col justify-content-flex-start p-4 bg-opacity-80 bg-stone-800 rounded-lg border-solid border-2 border-blue-800'>
       <MenuLink text='Hjem' address='/' isCurrent={current === 'hjem'} />
       <MenuLink
         text='Formater'

@@ -3,10 +3,18 @@ import Entry from '../components/Entry'
 import LeftMenu from '../components/LeftMenu'
 import MainContent from '../components/MainContent'
 import Text from '../components/Text'
+import Image from 'next/image'
 
 export default function Tur() {
   return (
     <>
+      <Image
+        src='/generated/forrest.png'
+        alt='Table of people with armor playing cards in a tavern'
+        width={1000}
+        height={1000}
+        className='z-0 fixed top-0 left-0 w-full aspect-square'
+      />
       <LeftMenu current='tur' />
       <MainContent>
         <>
