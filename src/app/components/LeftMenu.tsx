@@ -1,7 +1,14 @@
 import MenuLink from './MenuLink'
 
 type LeftMenuProps = {
-  current?: 'hjem' | 'formater' | 'tur' | 'mana' | 'kort' | 'ordliste'
+  current?:
+    | 'hjem'
+    | 'formater'
+    | 'tur'
+    | 'mana'
+    | 'kort'
+    | 'ordliste'
+    | 'cheatSheets'
 }
 
 export default function LeftMenu({ current }: LeftMenuProps) {
@@ -28,6 +35,11 @@ export default function LeftMenu({ current }: LeftMenuProps) {
         text='Liste med nøkkelord'
         address='/ordliste'
         isCurrent={current === 'ordliste'}
+      />
+      <MenuLink
+        text='Cheat Sheets'
+        address='/cheatSheets'
+        isCurrent={current === 'cheatSheets'}
       />
     </div>
   )
